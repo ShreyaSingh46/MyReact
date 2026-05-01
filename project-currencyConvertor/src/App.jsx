@@ -3,30 +3,32 @@ import {InputBox} from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [amount, setAmount] = useState(0)
-  const [from, setFrom] = useState("usd")
-  const [to, setTo] = useState("inr")
-  const [convertedAmount, setConvertedAmount] = useState(0)
+    const [count, setCount] = useState(0)
+    const [amount, setAmount] = useState(0)
+    const [from, setFrom] = useState("usd")
+    const [to, setTo] = useState("inr")
+    const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const currencyInfo = useCurrencyInfo(from)
+    const currencyInfo = useCurrencyInfo(from)
 
-  const options = currencyInfo ? Object.keys(currencyInfo) : []
+    const options = currencyInfo ? Object.keys(currencyInfo) : []
 
-  console.log(options)
+    console.log(options)
 
-  const swap = () => {
+    const swap = () => {
     setFrom(to)
     setTo(from)
     setConvertedAmount(amount)
     setAmount(convertedAmount)
-  }
+    }
 
-  const convert = () => {
+const convert = () => {
   setConvertedAmount(amount * (currencyInfo[to] || 1))
 }
 
-  return (
+
+
+return (
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
@@ -77,7 +79,7 @@ function App() {
             </div>
         </div>
     </div>
-  );
+);
 }
 
 export default App;
