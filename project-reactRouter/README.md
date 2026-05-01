@@ -1,3 +1,58 @@
+🧸Snugglii – React Router Project
+
+Note:
+This is a frontend practice project and not a fully functional e-commerce website.
+
+Overview
+Snugglii is a frontend only React project where I built a cute plushy themed website using React Router.
+This project focuses on learning routing, component structure, and basic UI design.
+
+Features:
+Multi-page navigation using React Router
+Pages included:
+Home
+About
+Contact
+User (dynamic route)
+GitHub (data loader example)
+Component based folder structure
+
+Tech Stack:
+React
+React Router DOM
+Tailwind CSS
+Vite
+
+Project Structure:
+src/
+ ├── components/
+ │   ├── Home/
+ │   ├── About/
+ │   ├── Contact/
+ │   ├── User/
+ │   ├── Github/
+ │   ├── Header/
+ │   └── Footer/
+ ├── Layout.jsx
+ ├── main.jsx
+ └── App.css
+ 
+🎯Learning Goals
+Understanding React Router
+Creating nested routes
+Using loaders for data fetching
+Organizing components effectively
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
